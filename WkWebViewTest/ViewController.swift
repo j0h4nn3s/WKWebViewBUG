@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     private var webViews: [WKWebView] = []
     
-    private let websites = ["https://www.google.com","https://www.facebook.com","https://www.twitter.com"]
+    private let websites = ["https://www.google.com","https://www.facebook.com","https://www.twitter.com","https://www.iteratec.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
