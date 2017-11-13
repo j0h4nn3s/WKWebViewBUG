@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WkWebViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-ai-HaV" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="120" width="375" height="447"/>
+                                <subviews>
+                                    <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqL-Zi-I6S">
+                                        <rect key="frame" x="50" y="0.0" width="275" height="447"/>
+                                        <color key="backgroundColor" red="0.93441106797142925" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17806078634159772" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pqL-Zi-I6S" secondAttribute="trailing" constant="50" id="WRE-i2-qPb"/>
+                                    <constraint firstAttribute="bottom" secondItem="pqL-Zi-I6S" secondAttribute="bottom" id="eh9-as-i1i"/>
+                                    <constraint firstItem="pqL-Zi-I6S" firstAttribute="leading" secondItem="dNw-ai-HaV" secondAttribute="leading" constant="50" id="nAc-7s-keL"/>
+                                    <constraint firstItem="pqL-Zi-I6S" firstAttribute="top" secondItem="dNw-ai-HaV" secondAttribute="top" id="zOD-aE-BJ7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.44839753707556462" blue="0.8918792649288112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dNw-ai-HaV" secondAttribute="bottom" constant="100" id="2Ly-FA-BwO"/>
+                            <constraint firstItem="dNw-ai-HaV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ts-kN-EDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dNw-ai-HaV" secondAttribute="trailing" id="a5P-46-woH"/>
+                            <constraint firstItem="dNw-ai-HaV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="vgh-zR-l6G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="pqL-Zi-I6S" id="qif-oJ-Ddj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
